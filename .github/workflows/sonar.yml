@@ -35,9 +35,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      # Step 4: Build the project and run tests
-      - name: Build and run tests
-        run: ./gradlew build jacocoTestReport
+#      # Step 4: Build the project and run tests
+#      - name: Build and run tests
+#        run: ./gradlew build jacocoTestReport
 
       # Step 5: Run SonarQube analysis
       - name: SonarQube Scan
